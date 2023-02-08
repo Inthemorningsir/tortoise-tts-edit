@@ -14,3 +14,5 @@ torchaudio
 threadpoolctl
 llvmlite
 appdirs
+music-tag	
+k-diffusion
