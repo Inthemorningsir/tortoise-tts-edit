@@ -141,7 +141,7 @@ class DiffusionTts(nn.Module):
             in_tokens=8193,
             out_channels=200,  # mean and variance
             dropout=0,
-            use_fp16=False,
+            use_fp16=True,
             num_heads=16,
             # Parameters for regularization.
             layer_drop=.1,
@@ -330,4 +330,3 @@ if __name__ == '__main__':
     #o = model(clip, ts, aligned_latent, cond)
     # Test with sequence aligned conditioning
     o = model(clip, ts, aligned_sequence, cond)
-
